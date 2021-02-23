@@ -1,5 +1,12 @@
 # Boilerplate
 
+### Getting Started
+
+```sh
+npm install
+npm start
+```
+
 ### Firebase
 
 If you are using Firebase, add the following environment variables inside `.env` file in the root directory.
