@@ -3,10 +3,12 @@ import ReactDOM from "react-dom"
 
 import "./styles/styles.scss"
 
-const App = () => (
+import App from "./app"
+
+const RenderApp = () => (
   <React.StrictMode>
-    <div>Hello, app!</div>
+    <App />
   </React.StrictMode>
 )
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<RenderApp />, document.getElementById("root"))

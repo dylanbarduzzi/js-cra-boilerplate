@@ -1,0 +1,107 @@
+@import "../../styles/variables";
+
+.colors {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: repeat(3, 5fr);
+  grid-template-rows: 10% repeat(3, 1fr) 10%;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "b1 b2 b3"
+    "b4 b5 b6"
+    "b7 b8 b9"
+    "footer footer footer";
+  grid-gap: .1rem;
+
+  font-weight: 700;
+  color: $color-black;
+  text-align: center;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: $color-white;
+  border-radius: $default-border-radius;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $color-black;
+  border-radius: $default-border-radius;
+  color: $color-white;
+}
+
+.block1 {
+  grid-area: b1;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.block2 {
+  grid-area: b2;
+  background-color: $color-gray-l2;
+  border-radius: $default-border-radius;
+}
+
+.block3 {
+  grid-area: b3;
+  background-color: $color-gray-l3;
+  border-radius: $default-border-radius;
+}
+
+.block4 {
+  grid-area: b4;
+  background-color: $color-gray-m1;
+  border-radius: $default-border-radius;
+}
+
+.block5 {
+  grid-area: b5;
+  background-color: $color-gray-m2;
+  border-radius: $default-border-radius;
+}
+
+.block6 {
+  grid-area: b6;
+  background-color: $color-gray-m3;
+  border-radius: $default-border-radius;
+}
+
+.block7 {
+  grid-area: b7;
+  background-color: $color-gray-d1;
+  border-radius: $default-border-radius;
+}
+
+.block8 {
+  grid-area: b8;
+  background-color: $color-gray-d2;
+  border-radius: $default-border-radius;
+}
+
+.block9 {
+  grid-area: b9;
+  background-color: $color-gray-d3;
+  border-radius: $default-border-radius;
+  color: $color-white;
+}
+
+@media only screen and (max-width: 600px) {
+  .colors {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas:
+      "navbar"
+      "b1"
+      "b2"
+      "b3"
+      "b4"
+      "b5"
+      "b6"
+      "b7"
+      "b8"
+      "b9"
+      "footer"
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.home {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 12% 40% 30% 18%;
+  grid-template-areas:
+    "nav  nav  nav  nav "
+    "sbar main main main"
+    "sbar ct1  ct2  ct3 "
+    "sbar foot foot foot";
+  grid-gap: .2rem;
+
+  font-weight: 700;
+  color: $color-black;
+  text-align: center;
+}
+
+.navbar {
+  grid-area: nav;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.main {
+  grid-area: main;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.sidebar {
+  grid-area: sbar;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.content1 {
+  grid-area: ct1;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.content2 {
+  grid-area: ct2;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.content3 {
+  grid-area: ct3;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+.footer {
+  grid-area: foot;
+  background-color: $color-gray-l1;
+  border-radius: $default-border-radius;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4% 4% 40% 14% 14% 14% 10%;
+    grid-template-areas:
+      "nav"
+      "sbar"
+      "main"
+      "ct1"
+      "ct2"
+      "ct3"
+      "foot";
+  }
+}

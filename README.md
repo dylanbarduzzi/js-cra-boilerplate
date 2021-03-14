@@ -26,15 +26,9 @@ Here are some dependencies you might consider installing.
 
 ```sh
 npm install --save \
-  node-sass@^4.0.0 \
-  react-router-dom \
   redux \
   redux-thunk \
   react-redux \
   firebase \
-  @fortawesome/react-fontawesome \
-  @fortawesome/free-solid-svg-icons \
-  @fortawesome/fontawesome-svg-core
+  history@^4.10.1
 ```
-
-And maybe `npm install --save history@^4.10.1`.
