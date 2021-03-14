@@ -4,7 +4,7 @@ import "./ColorsPage.scss"
 const ColorsPage = () => {
   return (
     <div className="colors">
-      <nav className="navbar">Navbar</nav>
+      <nav className="colors-navbar">Navbar</nav>
       <div className="block1">Block 1</div>
       <div className="block2">Block 2</div>
       <div className="block3">Block 3</div>
@@ -14,7 +14,7 @@ const ColorsPage = () => {
       <div className="block7">Block 7</div>
       <div className="block8">Block 8</div>
       <div className="block9">Block 9</div>
-      <footer className="footer">Footer</footer>
+      <footer className="colors-footer">Footer</footer>
     </div>
   )
 }

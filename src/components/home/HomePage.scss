@@ -11,7 +11,6 @@
     "sbar main main main"
     "sbar ct1  ct2  ct3 "
     "sbar foot foot foot";
-  grid-gap: .2rem;
 
   font-weight: 700;
   color: $color-black;
@@ -20,48 +19,41 @@
 
 .navbar {
   grid-area: nav;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-l2;
 }
 
 .main {
   grid-area: main;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-l3;
 }
 
 .sidebar {
   grid-area: sbar;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-m1;
 }
 
 .content1 {
   grid-area: ct1;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-m2;
 }
 
 .content2 {
   grid-area: ct2;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-m3;
 }
 
 .content3 {
   grid-area: ct3;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-d1;
 }
 
 .footer {
   grid-area: foot;
-  background-color: $color-gray-l1;
-  border-radius: $default-border-radius;
+  background-color: $color-gray-d2;
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .home {
     grid-template-columns: 1fr;
     grid-template-rows: 4% 4% 40% 14% 14% 14% 10%;
     grid-template-areas:
